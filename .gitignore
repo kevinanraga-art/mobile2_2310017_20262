@@ -36,8 +36,14 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-example
+# example folder
+example/
 
 # generated native folders
 /ios
 /android
+
+# internal files (tidak untuk dosen)
+MODUL10_CHECKLIST.md
+*.todo
+*.notes

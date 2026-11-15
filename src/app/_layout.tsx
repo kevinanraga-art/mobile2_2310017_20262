@@ -8,15 +8,12 @@ export default function RootLayout() {
       <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="register" options={{ headerShown: false }} />
 
-      {/* Homepage sederhana setelah berhasil login (tombol back dimatikan) */}
+      {/* Grup Bottom Navigation (5 Tab) setelah berhasil login */}
       <Stack.Screen
-        name="home"
+        name="(tabs)"
         options={{
-          title: "Beranda Aplikasi",
-          headerBackVisible: false,
-          headerStyle: { backgroundColor: "#FFFFFF" },
-          headerTintColor: "#0F172A",
-          headerTitleStyle: { fontWeight: "700" },
+          headerShown: false,
+          gestureEnabled: false,
         }}
       />
     </Stack>

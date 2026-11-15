@@ -29,7 +29,7 @@ export default function LoginScreen() {
     // Catatan: Pada modul berikutnya, bagian ini akan dihubungkan
     // ke Fetch API endpoint POST /api/login pada server Laravel 13.
     router.replace({
-      pathname: "/home",
+      pathname: "/(tabs)/home",
       params: { email: email.trim() },
     });
   };
