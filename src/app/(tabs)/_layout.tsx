@@ -1,5 +1,5 @@
-import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
@@ -49,11 +49,12 @@ export default function TabLayout() {
         }}
       />
 
-      {/* Tab 2: Mahasiswa (Integrasi Modul FlatList) */}
+      {/* Tab 2: Mahasiswa (Modul 08 — Context API dengan Sub-Tabs) */}
       <Tabs.Screen
         name="mahasiswa"
         options={{
           title: "Mahasiswa",
+          headerShown: false,
           tabBarIcon: ({ color, focused }: { color: any; focused: boolean }) => (
             <Ionicons
               name={focused ? "people" : "people-outline"}
